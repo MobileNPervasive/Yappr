@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar color="primary" expand="full">
+    <ion-title>Zalo</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" id="popover">
+        <ion-icon style="color: #ffffff;" name="ellipsis-horizontal-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-popover trigger="popover" triggerAction="click">
+      <ng-template>
+        <ion-content class="ion-padding">Hello World!</ion-content>
+      </ng-template>
+    </ion-popover>    
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-footer>
+  <ion-segment [value]="segment" mode="md" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="status">
+      <ion-label>status</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="chats">
+      <ion-label>chats</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="calls">
+      <ion-label>calls</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-footer>
+
+<ion-content color="light">
+  <ion-searchbar placeholder="Search..." showCancelButton="focus"></ion-searchbar>
+  <ion-list>
+    <ion-list-header color="light">
+      Recent chats
+    </ion-list-header>
+
+    <ion-item color="light">
+      <ion-avatar slot="start">
+        <img src="https://ionicframework.com/docs/demos/api/list/avatar-finn.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Diggy</h2>
+        <p>Hello y'all!!!!!!!!</p>
+      </ion-label>
+      <ion-text slot="end">12:00</ion-text>
+      <div class="dot"></div>
+    </ion-item>
+    <ion-item color="light">
+      <ion-avatar slot="start">
+        <img src="https://ionicframework.com/docs/demos/api/list/avatar-finn.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Diggy</h2>
+        <p>Hello y'all!!!!!!!!</p>
+      </ion-label>
+      <ion-text slot="end">12:00</ion-text>
+      <div class="dot"></div>
+    </ion-item>
+    <ion-item color="light">
+      <ion-avatar slot="start">
+        <img src="https://ionicframework.com/docs/demos/api/list/avatar-finn.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Diggy</h2>
+        <p>Hello y'all!!!!!!!!</p>
+      </ion-label>
+      <ion-text slot="end">12:00</ion-text>
+      <div class="dot"></div>
+    </ion-item>
+  
+  </ion-list>
+</ion-content>

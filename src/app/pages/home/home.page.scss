@@ -1,0 +1,58 @@
+ion-header {
+    height: 1.3cm;
+    ion-toolbar {
+        height: 1.3cm;
+        font-family: Arial, sans-serif;
+        display: flex;               
+        justify-content: center;     
+        align-items: center;         
+        height: 100%; 
+        ion-title {
+            font-size: 1.5rem;
+        }
+    }
+    ion-popover {
+        ion-content {
+          background-color: black;         
+          color: white;                    
+          border: 1mm solid white;         
+          border-radius: 8px;              
+          padding: 16px;                  
+        }
+      }    
+}
+
+ion-content {
+    ion-searchbar {
+        height: 12px;
+    }
+    ion-list {
+        ion-list-header {
+            font-size: 1.2rem;
+        }
+        ion-item {
+            ion-label {
+                h2 {
+                    font-size: 1rem;
+                }
+ 
+                p {
+                    margin-top: 3px;
+                    font-size: 0.8rem;
+                }
+                
+            }
+            ion-text {
+                font-size: 1rem;
+            }
+            .dot {
+                width: 10px;           
+                height: 10px;          
+                background-color: green; 
+                border-radius: 50%;    
+                display: inline-block;  
+                margin-right: 8px;        
+            }
+        }
+    }
+}
