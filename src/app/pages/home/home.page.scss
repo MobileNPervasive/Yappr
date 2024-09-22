@@ -1,4 +1,4 @@
-ion-header {
+ion-header.title_header {
     height: 1.3cm;
     ion-toolbar {
         height: 1.3cm;
@@ -39,11 +39,13 @@ ion-content {
                 p {
                     margin-top: 3px;
                     font-size: 0.8rem;
+                    color: grey;
                 }
                 
             }
             ion-text {
                 font-size: 1rem;
+                color: grey;
             }
             .dot {
                 width: 10px;           
@@ -54,5 +56,9 @@ ion-content {
                 margin-right: 8px;        
             }
         }
+    }
+    ion-fab {
+        margin-bottom: 5px;
+        margin-right: 5px;
     }
 }
