@@ -1,0 +1,7 @@
+{
+  "name": "chatchit-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
